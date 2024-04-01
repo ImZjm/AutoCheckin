@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云实习助理自定义签到</title>
+    <link rel="stylesheet" href="css/sytle.css">
+    <link rel="stylesheet" href="http://wgxy.cdvisor.com/styles/css/toastr.css">
+    <script src="http://wgxy.cdvisor.com/styles/js/jquery.min.js"></script>
+    <script src="http://wgxy.cdvisor.com/styles/js/toastr.min.js"></script>
+    <script src="http://wgxy.cdvisor.com/styles/js/md5.js"></script>
+</head>
+<body>
+    <div id="top"><div style="height: 60px;"></div></div>
+    <div id="content">
+        <div class="form">
+            <div class="welcome">Hello World!</div>
+            <div class="header">每一天，乐在沟通。</div>
+            <div id="form">
+                <input id="user" type="number" placeholder="学号">
+                <input id="password" type="password" placeholder="密码">
+                <input id="longitude" type="number" placeholder="经度">
+                <input id="latitude" type="number" placeholder="纬度">
+                <input id="address" type="text" placeholder="地点">
+                <div class="autoCheck">
+                    <input type="checkbox" name="autoCheck" id="autoCheck">
+                    <label for="autoCheck" id="autoCheck-label">自动签到</label>
+                </div>
+                <div class="image-input">
+                    <input id="picture" type="file" accept="image/jpeg">
+                    <label for="picture" id="image-input-label">选择图片</label>
+                    <img id="previewImage" src="" width="100%" style="display: none"/>
+                </div>
+                <input type="submit" value="签到" id="ok">
+            </div>
+        </div>
+    </div>
+    <div id="foot">本站仅供学习研究使用！未经许可，不得擅自使用、复制或传播网页上的内容。后果自负!</div>
+</body>
+<script src="js/script.js"></script>
+</html>
